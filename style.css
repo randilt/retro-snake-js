@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "VT323", monospace;
+  color: #29ae0b;
+}
+body {
+  background-color: #030101;
+}
+#game-board {
+  border-radius: 100px;
+  display: grid;
+  grid-template-columns: repeat(20, 20px);
+  grid-template-rows: repeat(20, 20px);
+  margin: 5px;
+}
+.game-border-1 {
+  border: #29ae0b solid 10px;
+  border-radius: 30px;
+  box-shadow: inset 0 0 0 10px #29ae0b;
+}
+.game-border-2 {
+  border: #134a06 solid 8px;
+  border-radius: 26px;
+  box-shadow: inset 0 0 0 10px #134a06;
+}
+.game-border-3 {
+  border: #082900 solid 30px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 5px #082900;
+}
+.scores {
+  display: flex;
+  gap: 200px;
+}
+#high-score {
+  display: none;
+}
+#instruction-text {
+  position: absolute;
+  top: 50%;
+  width: 300px;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 30px;
+  margin: 0;
+}
+.snake {
+  background-color: #29ae0b;
+  border: #134a06 1px dotted;
+}
+.food {
+  background-color: #29ae0b;
+  border: #134a06 5px solid;
+}
